@@ -27,7 +27,7 @@ const loadScript = (url, callback) => {
 function handleScriptLoad(updateQuery, autoCompleteRef, props) {
   autoComplete = new window.google.maps.places.Autocomplete(
     autoCompleteRef.current,
-    { types: ["geocode"], componentRestrictions: { country: "aus" } }
+    { types: ["geocode"], componentRestrictions: { country: "country-codes" } }
   );
   autoComplete.setFields(["address_components", "formatted_address"]);
   autoComplete.addListener("place_changed", () =>
