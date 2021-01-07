@@ -1,1 +1,0 @@
-export const API_BASE_URL = 'https://project-backend-app-friendly-squirrel-qb.mybluemix.net/'
