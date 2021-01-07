@@ -1,0 +1,251 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  width: 80%;
+  margin: auto;
+}
+
+header h1 {
+  font-size: 78px;
+  font-weight: 400;
+  color: #032f0e;
+  margin: 30px 0px 0px 200px;
+}
+
+.main-container {
+  height: 80vh;
+  display: flex;
+  width: 80%;
+  margin-left: 5rem;
+  margin-top: 0rem;
+  align-items: center;
+}
+
+.main-container-cookfood {
+  display: flex;
+  margin-left: 5rem;
+  margin-top: 0rem;
+  align-items: center;
+  background-image: url(../images/cookfood.jpg);
+  min-height: 100%;
+  min-width: 1024px;
+  width: 80%;
+  height:100%;
+  position:fixed;
+  top: 8%;
+  left: 0;
+}
+
+
+.title-container {
+  height: fit-content;
+  display: flex;
+}
+
+.social-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.google-btn,
+.facebook-btn {
+  width: 250px;
+  height: 50px;
+  margin: 10px 0px 0px 0px;
+  cursor: pointer;
+  background: transparent;
+}
+
+.form-container {
+  background: white;
+  display: flex;
+  min-height: 60vh;
+  min-width: 60vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  left: 300px;
+  filter: drop-shadow(0px 3px 3px black);
+  border-radius: 10%;
+}
+
+.form-container * {
+  width: 250px;
+  height: 30px;
+}
+.form-title {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 400;
+  align-self: center;
+  width: fit-content;
+}
+
+input::placeholder {
+  font-size: 18px;
+}
+.signup-btn,
+.signin-btn {
+  margin-top: 20px;
+  width: 100px;
+  background: transparent;
+  background-color: #4c6a26;
+  color: white;
+  border-radius: 30px;
+  font-size: 18px;
+  border: 1px solid black;
+  margin-left: 70px;
+}
+.user-input,
+.pass-input,
+.conf-input,
+.mob-input {
+  width: 300px;
+  margin: 10px;
+  padding-left: 50px;
+  padding-top: 8px;
+  border: 1px solid black;
+}
+input[type='text'] {
+  font-size: 18px;
+}
+input[type='password'] {
+  font-size: 18px;
+}
+
+.user-input {
+  background: url(../images/username.svg) left no-repeat;
+  background-size: contain;
+}
+.text-input {
+  background-size: contain;
+}
+.text-area {
+  background-size: contain;
+  margin: 10px;
+  width: 299px;
+  height: 69px;
+}
+.pass-input {
+  background: url(../images/wpf_password1.svg) left no-repeat;
+  background-size: contain;
+}
+.conf-input {
+  background: url(../images/wpf_password1.svg) left no-repeat;
+  background-size: contain;
+}
+.mob-input {
+  background: url(../images/mobile.svg) left no-repeat;
+  background-size: contain;
+}
+.food-image {
+  height: 100vh;
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  z-index: -1;
+}
+
+.btn-container img {
+  position: relative;
+  right: 90px;
+  top: 8px;
+}
+.google-btn-text,
+.facebook-btn-text {
+  position: relative;
+  bottom: 20px;
+  left: 15px;
+  font-size: 18px;
+}
+
+.google-btn,
+.facebook-btn {
+  border: 1px solid black;
+}
+
+.container{
+  width: 80%;
+  margin: 0 auto; /* Center the DIV horizontally */
+}
+.fixed-header{
+  width: 100%;
+  position: relative;        
+  background:black;
+  padding: 20px 10px;
+}
+.fixed-header{
+  top: 0;
+}
+
+nav div{
+  color: #fff;
+  text-decoration: none;
+  padding: 7px 25px;
+  display:inline-flexbox;
+}
+
+.orderfood-image {
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height:100%;
+  position:fixed;
+  top: 8%;
+  left: 0;
+}
+
+.form-input-text-input{
+  width: 80%;
+  padding: 18px 20px;
+  border: 1;
+  border-radius: 25px;
+  font-size: medium;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+.form-input-text-area{
+  width: 90%;
+  padding: 50px 20px;
+  border: 1;
+  font-size: medium;
+}
+
+nav button{
+  font-size: medium;
+  border-radius: 25px;
+  padding: 5px 8px;
+  background-color: white;
+  text-decoration-color: black;
+}
+
+p{
+  text-emphasis-color: black;
+}
+
+.form-contain{
+  background:white transparent;
+  opacity: 0.8;
+  display: flex;
+  min-height: 20vh;
+  min-width: 2vw;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  left: 380px;
+  border-radius: 10%;
+  font-weight: bold;
+  top:20%
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/public/css/style.css" />
+    <title>Sign up</title>
+  </head>
+  <body>
+    <header>
+      <div class="head-container">
+        <h1 class="title-container">Food Delight</h1>
+      </div>
+    </header>
+
+    <main>
+      <div class="main-container">
+        <div class="social-btn">
+          <form action="/auth/google" method="GET">
+            <button type="submit" class="google-btn">
+              <div class="btn-container">
+                <img
+                  src="./img/google-icon.svg"
+                  alt="google icon"
+                  width="30"
+                  height="30"
+                />
+              </div>
+              <span class="google-btn-text">Sign up via Google</span>
+            </button>
+          </form>
+          <form action="/auth/facebook" method="GET">
+            <button type="submit" facebook-btn">
+              <div class="btn-container">
+                <img
+                  src="./img/facebook.svg"
+                  alt="facebookicon"
+                  width="30"
+                  height="30"
+                />
+              </div>
+              <span class="facebook-btn-text">Sign up via Facebook</span>
+            </button>
+          </form>
+        </div>
+        <div class="form-container">
+          <form action="/register" method="POST">
+          <h2 class="form-title">Sign up via Email</h2>
+
+          <input
+            type="text"
+            class="form-input user-input"
+            name="username"
+            placeholder="Username"
+            required
+          />
+
+          <input
+            type="password"
+            class="form-input pass-input"
+            id="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+
+          <input
+            type="password"
+            class="form-input conf-input"
+            id="confirm_password"
+            placeholder="Confirm Password"
+            required
+          />
+
+          <input
+            type="text"
+            class="form-input mob-input"
+            placeholder="Mobile Number"
+            required
+          />
+          <button type="submit" class="signup-btn">Sign up</button>
+        </form>
+        </div>
+      </div>
+    </main>
+    <img class="food-image" src="./img/signup.jpg" alt="signup-image" />
+  </body>
+  <script>
+    $('#password, #confirm_password').on('keyup', function () {
+  if ($('#password').val() == $('#confirm_password').val()) {
+    $('#message').html('Matching').css('color', 'green');
+  } else 
+    $('#message').html('Not Matching').css('color', 'red');
+});
+  </script>
+</html>
